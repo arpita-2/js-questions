@@ -18,6 +18,8 @@ const newArrays = arrayOfIntegers.map((number) => {
   }
 });
 
+console.log(newArrays);
+
 //return an object with sum of all odd numbers and even numbers separately
 
 const sumOfOddAndEven = arrayOfIntegers.reduce(
@@ -32,3 +34,5 @@ const sumOfOddAndEven = arrayOfIntegers.reduce(
   },
   { sumOfOddNumbers: 0, sumOfEvenNumbers: 0 }
 );
+
+console.log(sumOfOddAndEven);
