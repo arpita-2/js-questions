@@ -29,3 +29,22 @@ const arrayOfObjects = fruits.map((fruit) => {
 });
 
 console.log(arrayOfObjects);
+
+// return an array with strings which have vowels
+
+const strWithVowels = randomArr.filter((str) => {
+  const vowels = ["a", "e", "i", "o", "u"];
+
+  let hasVowel = false;
+
+  for (let i = 0; i < vowels.length; i++) {
+    const vowelValue = vowels[i];
+    const includesVowel = str.includes(vowelValue);
+    if (includesVowel) {
+      hasVowel = true;
+      break;
+    }
+  }
+
+  return hasVowel;
+});
